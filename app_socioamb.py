@@ -147,7 +147,7 @@ df_melted = gdf_incra_selecionado[columns_renamed].melt( var_name='Categoria', v
 df_melted = df_melted.groupby('Categoria').mean().reset_index()
 # Criando o gráfico de barras
 fig = px.bar(df_melted, x='Categoria', y='Área', color='Categoria', barmode='group',
-             labels={'Categoria': 'Categoria', 'Área': 'Área (m²)'})
+             labels={'Categoria': 'Categoria', 'Área': 'Área (ha)'})
 
 fig.update_traces(width=0.7)  # Aumenta a largura das barras (valor padrão é ~0.8)
 
