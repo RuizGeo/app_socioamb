@@ -12,7 +12,7 @@ import plotly.express as px
 st.set_page_config(page_title="SocioAmb", layout="wide")
 
 # Caminho para o GeoPackage
-gpkg_file = "geodados_municipio.gpkg"
+gpkg_file = "/geodados_municipios.gpkg"
 
 # Leitura dos dados do INCRA
 incra = ler_geodataframe(gpkg_file, 'incra')
